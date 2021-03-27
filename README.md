@@ -59,3 +59,13 @@ Contributors
 * Mark Galloway
 * Abram Hindle
 * Cole Mackenzie
+
+References
+==========
+* [Professor Hindle's WebSocketsExamples](https://github.com/abramhindle/WebSocketsExamples)
+  * Author: [Abram Hindle](https://github.com/abramhindle)
+
+* [Random Colors](https://stackoverflow.com/a/50529742)
+  * Author: [Lewis](https://stackoverflow.com/users/5312731/lewis)
+
+* [MDN - WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)
