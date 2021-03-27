@@ -1,3 +1,7 @@
+# dev environment
+/venv
+/.vscode
+
 *.py[cod]
 
 # C extensions
