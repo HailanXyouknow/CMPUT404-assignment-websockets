@@ -261,18 +261,20 @@ function wsSetup() {
     socket = new WebSocket(url);
     socket.onopen = function() {
         //XXX: TODO What are you going to do here?
+
     };
     socket.onerror = function(msg) {
         debug("WebSocket Error:" + msg.data);
     };
     socket.onmessage = function(msg) {  
         try {
-            debug("WebSocket Recv:" + msg.data);
-            //XXX: TODO What are you going to do here?   
-            for(let entity in JSON.parse(msg.data)){
-                world[entity] = data[entity];
+            //debug("WebSocket Recv:" + msg.data);
+            //XXX: TODO What are you going to do here?  
+            let data = JSON.parse(msg.data);
+            for (let entity in data) {
+                world[entity] = data[entity]
             }
-            drawNextFrame();
+            drawNextFrame()
         } catch (e) {
             alert("socket on message: " + e);
         }
